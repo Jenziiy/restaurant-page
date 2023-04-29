@@ -8,5 +8,5 @@ function component() {
   return element;
 }
 console.log('hallo')
-document.body.appendChild(component());
+// document.body.appendChild(component());
 document.body.appendChild(onInitialPageLoad());

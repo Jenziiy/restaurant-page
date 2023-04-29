@@ -8,3 +8,16 @@ body {
   color: blueviolet;
   background-color: black;
 }
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  column-gap: 10px;
+  text-align: center;
+}
+
+li {
+  border: 1px burlywood outset;
+  padding: 10px 0px;
+}
