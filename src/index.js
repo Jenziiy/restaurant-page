@@ -2,7 +2,6 @@ import onInitialPageLoad from "./initial-page-load";
 import initializeMenuPage from "./menu-page";
 import "./style.css";
 import initializeWelcomePage from "./welcome-page";
-import img from "./pizza.png";
 
 function navigateToPage(page){
   document.body.appendChild(page);
@@ -14,9 +13,17 @@ function component() {
 }
 console.log('hallo');
 // document.body.appendChild(component());
-document.body.appendChild(onInitialPageLoad());
 
-const homeButton = document.getElementById('welcome');
-const menuButton = document.getElementById('menu');
-menuButton.addEventListener('click', () => navigateToPage(initializeMenuPage()));
-homeButton.addEventListener('click', () => navigateToPage(initializeWelcomePage()));
+
+function Controller () {
+// load Initial page
+  document.body.appendChild(onInitialPageLoad());
+
+// get navigational buttons
+  const homeButton = document.getElementById('welcome');
+  const menuButton = document.getElementById('menu');
+
+// set event listeners for navigational buttons
+  menuButton.addEventListener('click', () => navigateToPage(initializeMenuPage()));
+  homeButton.addEventListener('click', () => navigateToPage(initializeWelcomePage()));
+}

@@ -8,6 +8,6 @@ export default function initializeMenuPage(){
   main.innerHTML = 'hello here we have nice menu items, still working on it';
   const myIcon = new Image();
 myIcon.src = img;
-document.querySelector('img') ?? document.body.appendChild(myIcon);
+document.querySelector('img') ?? main.appendChild(myIcon);
   return main;
 }

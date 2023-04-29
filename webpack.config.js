@@ -15,6 +15,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
   },
   module: {
@@ -29,14 +30,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/i,
         type: 'asset/resource',
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images',
-            },
-          },
-        ]
       },
     ]
   },
