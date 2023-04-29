@@ -1,6 +1,7 @@
 body {
   background-color: pink;
   color: black;
+  background-image: url('./pizza.png');
 }
 
 #content {
@@ -20,4 +21,8 @@ ul {
 li {
   border: 1px burlywood outset;
   padding: 10px 0px;
+}
+
+.pressed {
+  background-color: aqua;
 }
