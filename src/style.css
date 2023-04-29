@@ -1,0 +1,10 @@
+body {
+  background-color: pink;
+  color: black;
+}
+
+#content {
+  border: 10px black;
+  color: blueviolet;
+  background-color: black;
+}
