@@ -15,7 +15,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  background-color: pink;\\r\\n  color: black;\\r\\n}\\r\\n\\r\\n#content {\\r\\n  border: 10px black;\\r\\n  color: blueviolet;\\r\\n  background-color: black;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://package.json/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./pizza.png */ \"./src/pizza.png?b8c0\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  background-color: pink;\\r\\n  color: black;\\r\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\r\\n}\\r\\n\\r\\n#content {\\r\\n  border: 10px black;\\r\\n  color: blueviolet;\\r\\n  background-color: black;\\r\\n}\\r\\n\\r\\nul {\\r\\n  display: grid;\\r\\n  grid-template-columns: repeat(5, 1fr);\\r\\n  list-style: none;\\r\\n  column-gap: 10px;\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\nli {\\r\\n  border: 1px burlywood outset;\\r\\n  padding: 10px 0px;\\r\\n}\\r\\n\\r\\n.pressed {\\r\\n  background-color: aqua;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://package.json/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -29,6 +29,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://package.json/./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
 /*!**************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
@@ -36,6 +46,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://package.json/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/pizza.png?a430":
+/*!***********************!*\
+  !*** ./src/pizza.png ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/341bf5183de5e812164e8b7014353709.png\");\n\n//# sourceURL=webpack://package.json/./src/pizza.png?");
 
 /***/ }),
 
@@ -115,7 +135,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page-load */ \"./src/initial-page-load.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\r\n\r\n\r\nfunction component() {\r\n  const element = document.createElement('div');\r\n  element.innerHTML = 'tsup';\r\n\r\n  return element;\r\n}\r\nconsole.log('hallo')\r\ndocument.body.appendChild(component());\r\ndocument.body.appendChild((0,_initial_page_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack://package.json/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page_load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page-load */ \"./src/initial-page-load.js\");\n/* harmony import */ var _menu_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-page */ \"./src/menu-page.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _welcome_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./welcome-page */ \"./src/welcome-page.js\");\n/* harmony import */ var _pizza_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pizza.png */ \"./src/pizza.png?a430\");\n\r\n\r\n\r\n\r\n\r\n\r\nfunction navigateToPage(page){\r\n  document.body.appendChild(page);\r\n}\r\n\r\nfunction component() {\r\n  const element = document.createElement('div');\r\n  return element;\r\n}\r\nconsole.log('hallo');\r\n// document.body.appendChild(component());\r\ndocument.body.appendChild((0,_initial_page_load__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\nconst homeButton = document.getElementById('welcome');\r\nconst menuButton = document.getElementById('menu');\r\nmenuButton.addEventListener('click', () => navigateToPage((0,_menu_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()));\r\nhomeButton.addEventListener('click', () => navigateToPage((0,_welcome_page__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()));\n\n//# sourceURL=webpack://package.json/./src/index.js?");
 
 /***/ }),
 
@@ -125,7 +145,37 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ini
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ onInitialPageLoad)\n/* harmony export */ });\nfunction onInitialPageLoad(){\r\n  const element = document.createElement('div');\r\n\r\n  const header = document.createElement('header');\r\n  header.innerHTML = '<h1> RESTAURANT LOS GATOS </h1>';\r\n\r\n  const nav = document.createElement('nav');\r\n  nav.innerHTML = '<ul> <li>Accueil</li> <li>Découvrez LOS GATOS</li> <li>Menu</li> </ul>';\r\n\r\n  const main = document.createElement('main');\r\n  main.innerHTML = 'Salut, nous vous accueillons chez notre resto! Nous preparons le poisson et cetra. à bientôt!';\r\n\r\n  element.appendChild(header);\r\n  element.appendChild(nav);\r\n  element.appendChild(main);\r\n\r\n  return element;\r\n}\r\n\n\n//# sourceURL=webpack://package.json/./src/initial-page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ onInitialPageLoad)\n/* harmony export */ });\nfunction onInitialPageLoad(){\r\n  const element = document.createElement('div');\r\n\r\n  const header = document.createElement('header');\r\n  header.innerHTML = '<h1> RESTAURANT LOS GATOS </h1>';\r\n\r\n  const nav = document.createElement('nav');\r\n  nav.innerHTML = '<ul> <li id=\"welcome\">Accueil</li> <li id=\"discover\">Découvrez LOS GATOS</li> <li id=\"menu\">Menu</li> </ul>';\r\n\r\n  const main = document.createElement('main');\r\n  main.innerHTML = 'Salut, nous vous accueillons chez notre resto! Nous preparons le poisson et cetra. à bientôt!';\r\n\r\n  element.appendChild(header);\r\n  element.appendChild(nav);\r\n  element.appendChild(main);\r\n\r\n  return element;\r\n}\r\n\n\n//# sourceURL=webpack://package.json/./src/initial-page-load.js?");
+
+/***/ }),
+
+/***/ "./src/menu-page.js":
+/*!**************************!*\
+  !*** ./src/menu-page.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initializeMenuPage)\n/* harmony export */ });\nfunction initializeMenuPage(){\r\n  document.querySelector('.pressed')?.classList.remove('pressed');\r\n  const menuButton = document.getElementById('menu');\r\n  menuButton?.classList.add('pressed');\r\n  const main = document.querySelector('main');\r\n  main.innerHTML = 'hello here we have nice menu items, still working on it';\r\n  return main;\r\n}\n\n//# sourceURL=webpack://package.json/./src/menu-page.js?");
+
+/***/ }),
+
+/***/ "./src/welcome-page.js":
+/*!*****************************!*\
+  !*** ./src/welcome-page.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initializeWelcomePage)\n/* harmony export */ });\nfunction initializeWelcomePage(){\r\n  document.querySelector('.pressed')?.classList.remove('pressed');\r\n  const welcomeButton = document.getElementById('welcome');\r\n  welcomeButton?.classList.add('pressed');\r\n  const main = document.querySelector('main');\r\n  main.innerHTML = 'Salut, nous vous accueillons chez notre resto! Nous preparons le poisson et cetra. à bientôt!';\r\n  return main;\r\n}\n\n//# sourceURL=webpack://package.json/./src/welcome-page.js?");
+
+/***/ }),
+
+/***/ "./src/pizza.png?b8c0":
+/*!***********************!*\
+  !*** ./src/pizza.png ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bbbe028988bcc8a2078b.png\";\n\n//# sourceURL=webpack://package.json/./src/pizza.png?");
 
 /***/ })
 
